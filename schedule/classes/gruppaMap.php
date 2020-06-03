@@ -11,6 +11,6 @@
  *
  * @author nikat
  */
-class gruppaMap  extends BaseMap{
+class GruppaMap  extends BaseMap{
     //put your code here
 }

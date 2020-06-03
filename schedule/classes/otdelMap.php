@@ -11,6 +11,6 @@
  *
  * @author nikat
  */
-class otdelMap extends BaseMap{
+class OtdelMap extends BaseMap{
     //put your code here
 }

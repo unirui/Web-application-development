@@ -11,6 +11,6 @@
  *
  * @author nikat
  */
-class specialMap extends BaseMap {
+class SpecialMap extends BaseMap {
     //put your code here
 }

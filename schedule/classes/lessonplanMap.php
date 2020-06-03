@@ -11,6 +11,6 @@
  *
  * @author nikat
  */
-class lessonplanMap extends BaseMap{
+class LessonplanMap extends BaseMap{
     //put your code here
 }

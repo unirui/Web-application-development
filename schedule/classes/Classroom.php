@@ -11,7 +11,7 @@
  *
  * @author nikat
  */
-class Classroom extends table {
+class Classroom extends Table {
     public $classroom_id=0;
     public $name='';
     public $time_lesson='';

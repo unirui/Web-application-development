@@ -1,9 +1,8 @@
+<?php session_start()?>
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
+
 <html>
+    
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,7 +58,7 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="/auth.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>Расписание</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -74,21 +73,24 @@ desired effect
       </a>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
+          
         <ul class="nav navbar-nav">         
         <!-- User Account Menu -->
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
              <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Здравствуйте,Джон Смит Тимофеевич</span>
+              <span class="hidden-xs"><?php  echo "Здравствуйте, " . $_SESSION['fio'] ?></span>
+        
+
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
                 
                 <p>
-                  Джон Смит Тимофеевич
-              <br>Администратор
+                  <?php echo $_SESSION['fio'] ?>
+              <br>- <?php echo $_SESSION['roleName'] ?>
                 </p>
               </li>
               
@@ -98,7 +100,9 @@ desired effect
                   <a href="#" class="btn btn-default btn-flat">Профиль</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Выход</a>
+                  <form method="POST">
+                      <button type="submit" class="btn btn-default btn-flat" name="out">Выход<?php unset($_SESSION['fio'])?></button>
+                  </form>
                 </div>
               </li>
             </ul>

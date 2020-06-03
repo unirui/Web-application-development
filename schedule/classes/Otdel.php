@@ -11,7 +11,7 @@
  *
  * @author nikat
  */
-class Otdel extends table{
+class Otdel extends Otdel{
     public $otdel_id = 0;
     public $name = '';
     public $active = 1;

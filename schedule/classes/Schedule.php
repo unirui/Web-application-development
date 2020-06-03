@@ -11,7 +11,7 @@
  *
  * @author nikat
  */
-class Schedule extends table{
+class Schedule extends Table{
     
     public $schedule_id=0;
     public $lesso_plan_id=0;

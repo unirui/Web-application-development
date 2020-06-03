@@ -11,7 +11,7 @@
  *
  * @author nikat
  */
-class Student extends table{
+class Student extends Table{
     public $user_id=0;
     public  $gruppa_id=0;
     public $num_zach='';

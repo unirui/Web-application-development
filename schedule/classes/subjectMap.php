@@ -11,6 +11,6 @@
  *
  * @author nikat
  */
-class subjectMap extends BaseMap{
+class SubjectMap extends BaseMap{
     //put your code here
 }

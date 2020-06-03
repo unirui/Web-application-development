@@ -11,6 +11,6 @@
  *
  * @author nikat
  */
-class scheduleMap extends BaseMap{
+class ScheduleMap extends BaseMap{
     //put your code here
 }
