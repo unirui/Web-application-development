@@ -11,7 +11,7 @@
  *
  * @author nikat
  */
-abstract class BaseMap {
+abstract class BaseMap extends config{
     /**
 * @var PDO
 */

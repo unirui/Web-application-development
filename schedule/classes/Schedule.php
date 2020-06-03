@@ -20,7 +20,7 @@ class Schedule extends table{
     public $classroom_id=0;
     
     public function validate() {
-        parent::validate();
+        
         return FALSE;
     }
 }

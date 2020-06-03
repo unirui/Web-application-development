@@ -23,7 +23,7 @@ class User extends table {
 
 
     public function validate() {
-        parent::validate();
+        
         return FALSE;
     }
 }

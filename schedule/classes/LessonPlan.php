@@ -18,7 +18,7 @@ class LessonPlan extends table{
     public $user_id=0;
     
     public function validate() {
-        parent::validate();
+        
         return FALSE;
     }
 }

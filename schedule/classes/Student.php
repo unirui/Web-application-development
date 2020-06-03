@@ -17,7 +17,7 @@ class Student extends table{
     public $num_zach='';
     
     public function validate() {
-        parent::validate();
+        
         return FALSE;
     }
 }

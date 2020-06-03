@@ -19,7 +19,7 @@ class Gruppa extends table {
     public $date_end='';
     
     public function validate() {
-        parent::validate();
+        
         return FALSE;
     }
 }

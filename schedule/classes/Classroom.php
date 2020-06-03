@@ -17,7 +17,7 @@ class Classroom extends table {
     public $time_lesson='';
     
     public function validate() {
-        parent::validate();
+        
         return FALSE;
     }
 }

@@ -19,7 +19,7 @@ class Subject extends table{
     public $active=1;
     
     public function validate() {
-        parent::validate();
+        
         return FALSE;
     }
 }
