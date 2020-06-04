@@ -2,8 +2,7 @@
 require_once 'autoload.php';
 session_start();
 $message = 'Войдите для просмотра расписания занятий';
-if (isset($_POST['login']) &&
-isset($_POST['password'])) {
+if (isset($_POST['login']) && isset($_POST['password'])) {
 $login = Helper::clearString($_POST['login']);
 $password = Helper::clearString($_POST['password']);
 $userMap = new UserMap();

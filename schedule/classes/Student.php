@@ -18,6 +18,9 @@ class Student extends Table{
     
     public function validate() {
         
-        return FALSE;
+       if (!empty($this->gruppa_id)) {
+return true;
+}
+return false;
     }
 }
