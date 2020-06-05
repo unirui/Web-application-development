@@ -14,10 +14,11 @@
 class Classroom extends Table {
     public $classroom_id=0;
     public $name='';
-    public $time_lesson='';
     
     public function validate() {
-        
-        return FALSE;
+        if (!empty($this->name)) {
+return true;
+}
+return false;
     }
 }

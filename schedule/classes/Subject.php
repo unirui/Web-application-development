@@ -19,7 +19,11 @@ class Subject extends Table{
     public $active=1;
     
     public function validate() {
-        
-        return FALSE;
+       if (!empty($this->name) &&
+!empty($this->otdel_id) &&
+!empty($this->hours)) {
+return true;
+}
+return false;
     }
 }
