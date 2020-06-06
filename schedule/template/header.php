@@ -1,4 +1,5 @@
-<?php session_start()?>
+<?php require_once 'secure.php'
+?>
 <!DOCTYPE html>
 
 <html>
@@ -79,8 +80,8 @@ desired effect
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-             <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs"><?php  echo "Здравствуйте, " . $_SESSION['fio'] ?></span>
+             
+              <span class="hidden-xs">Здравствуйте <?=$_SESSION['fio']?></span>
         
 
             </a>
@@ -89,8 +90,8 @@ desired effect
               <li class="user-header">
                 
                 <p>
-                  <?php echo $_SESSION['fio'] ?>
-              <br>- <?php echo $_SESSION['roleName'] ?>
+                  <?= $_SESSION['fio']?>
+              <br>- <?= $_SESSION['roleName'] ?>
                 </p>
               </li>
               

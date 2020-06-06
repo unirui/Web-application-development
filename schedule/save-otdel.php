@@ -1,6 +1,9 @@
 <?php
-
 require_once 'secure.php';
+if (!Helper::can('admin') && !Helper::can('manager')) {
+header('Location: 404.php');
+exit();
+}
 if (isset($_POST['otdel_id'])) {
 $otdel = new Otdel();
 $otdel->gruppa_id =Helper::clearInt($_POST['otdel_id']);

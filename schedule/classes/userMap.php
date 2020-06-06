@@ -1,5 +1,9 @@
 <?php
 class UserMap extends BaseMap{
+    const USER = 'user';
+    const TEACHER = 'teacher';
+    const STUDENT = 'student';
+    
     public function auth($login,$password){
         $login = $this->db->quote($login);
 $res = $this->db->query("SELECT user.user_id,
@@ -112,5 +116,18 @@ user.role_id=role.role_id WHERE user.user_id = $id");
 return $res->fetch(PDO::FETCH_OBJ);
 }
 return false;
+    }
+    
+    public function identity($id){
+   if ((new TeacherMap())->findById($id)->validate()) {
+return self::TEACHER;
+}
+if ((new StudentMap())->findById($id)->validate()) {
+return self::STUDENT;
+}
+if ($this->findById($id)->validate()) {
+return self::USER;
+}
+return null;     
     }
  }
